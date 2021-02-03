@@ -2,9 +2,12 @@ body {
     font-family: "Nunito Sans Arial";
     margin: 0;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
     box-sizing: border-box;
-  }
+}
 
 .wrapper {
     max-width: 1259px;
@@ -13,6 +16,9 @@ body {
 
 .header {
     background: #131313;
+    position: sticky;
+    z-index: 10;
+    top: 0;
 
 }
 
@@ -77,14 +83,15 @@ body {
     position: relative;
     font-family: "Nunito Sans";
 }
-
-.img-back-overlay {
+.img-back::before {
+    content: "";
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, .5);
+    transition: all .3s ease;
 }
 
 .img-back-container {
@@ -235,6 +242,7 @@ body {
 
 .camera {
     margin-bottom: -13px;
+
 }
 
 .control-photo {
@@ -247,7 +255,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 5px;
     background-color: rgba(0, 0, 0, .5);
     transition: all .3s ease;
 }
@@ -256,6 +264,22 @@ body {
     padding-bottom: 15px;
     color: white;
     padding-left: 300px;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 350px;
+    top: 130px;
+    z-index: 1;
+
+}
+
+.strelka {
+    position: absolute;
+    left: 415px;
+    top: 185px;
+    z-index: 2;
 }
 
 .center-dash {
@@ -277,6 +301,15 @@ body {
     margin-top: 34px;
 }
 
+
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 93px;
+    max-width: 768px;
+
+}
 .label {
     font-family: "Nunito Sans";
     font-style: normal;
@@ -284,30 +317,52 @@ body {
     font-size: 13px;
     line-height: 21px;
     color: rgba(54, 54, 54, 0.5);
-    margin-right: 20px;
-}
-
-
-.form {
-    display: flex;
-    justify-content: space-between;
-    margin-top:93px;
+    /* margin-right: 20px; */
 
 }
+
 
 .input {
-    margin-top:30px;
-    border:none;
+    border: none;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
-    margin-bottom:35px;
-    margin-left:-180px;
+    margin: 30px 0 35px -180px;
+    max-width: 231px;
+    
+
+
+    
 }
+
 input::-webkit-input-placeholder {
-    color:black ;
-   }
+    color: black;
+}
+
 input:-ms-input-placeholder {
-    color:black;
-  }
-input::-moz-placeholder  {
-    color:black; 
+    color: black;
+}
+
+input::-moz-placeholder {
+    color: black;
+}
+.check-label {
+    color:#181818;
+    font-family: "Nunito Sans";
+    padding-left: 2em;
+    margin-left:30%;
+
+
+}
+
+.check-input {
+   -webkit-appearance: none;
+   appearance: none;
+   position: absolute;
+ 
+}
+.check-box{
+    position: absolute;
+    width:18px;
+    height: 18px;
+    background-color: #E3B873;
+    margin-left:-2em;
 }
