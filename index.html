@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="normalize/normalize.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+
     <header class="header ">
         <div class="wrapper header-content">
             <div class="logo">
@@ -50,46 +52,53 @@
         </div>
         <div class="project-section">
             <div class="wrapper">
-                <ul class="points">
-                    <li><a href="#">Rostov-on-Don, Admiral</a></li>
-                    <li><a href="#">Sochi Thieves</a></li>
-                    <li><a href="#">Rostov-on-Don Patriotic</a></li>
-                </ul>
-                <img src="img/image 2.1.jpg" class="image2-1">
-                <h2 class="title completed">Completed projects</h2>
+                <div class="project-container">
+                    <ul class="points">
+                        <li><a href="#">Rostov-on-Don, Admiral</a></li>
+                        <li><a href="#">Sochi Thieves</a></li>
+                        <li><a href="#">Rostov-on-Don Patriotic</a></li>
+                    </ul>
+                    <h2 class="title completed">Completed projects</h2>
+                    <p class="common second-subtitle">Only a small part of the work performed by our company is
+                        presented on
+                        the site. For 14 years on in the construction<br>
+                        market we have made happy more than 1000 families</p>
+                    <img src="img/image 2.1.jpg" class="image2-1">
+                    <div class="img-hidden">
+                        <img src="img/Group 8.8.svg" class="slider-icon">
+                        <img src="img/project.jpg" class="hidden-project">
+                        <img src="img/Group 8.9.svg" class="slider-icon2">
+                    </div>
+                    <div class="block">
+                        <div class="block-card">
+                            <h2 class="title title-style">City:</h2>
+                            <p class="common">Rostov-on-Don<br>
+                                LCD admiral</p>
+                        </div>
+                        <div class="block-card">
+                            <h2 class="title title-style">apartment area</h2>
+                            <p class="common">81m<sup>2</sup></p>
 
-                <p class="common second-subtitle">Only a small part of the work performed by our company is presented on
-                    the site. For 14 years on in the construction<br>
-                    market we have made happy more than 1000 families</p>
-                <div class="block">
-                    <div class="block-card">
-                        <h2 class="title title-style">City:</h2>
-                        <p class="common">Rostov-on-Don<br>
-                            LCD admiral</p>
+                        </div>
+                        <div class="block-card">
+                            <h2 class="title title-style">Repair Time:</h2>
+                            <p class="common">3.5 months<br>
+                                LCD admiral</p>
+                        </div>
+                        <div class="block-card">
+                            <h2 class="title title-style">Repair Cost:</h2>
+                            <p class="common">Upon request</p>
+                        </div>
                     </div>
-                    <div class="block-card">
-                        <h2 class="title title-style">apartment area</h2>
-                        <p class="common">81m<sup>2</sup></p>
-
+                    <div class="slider">
+                        <img src="img/strelka.svg">
+                        <img src="img/Vector (Stroke).svg" class="svg">
+                        <img src="img/strelka2.svg" class="rect">
+                        <img src="img/Rectangle 7.4.svg" class=rect>
+                        <img src="img/Rectangle 7.4.svg" class="rect">
+                        <img src="img/Vector (Stroke).svg">
+                        <img src="img/line.svg">
                     </div>
-                    <div class="block-card">
-                        <h2 class="title title-style">Repair Time:</h2>
-                        <p class="common">3.5 months<br>
-                            LCD admiral</p>
-                    </div>
-                    <div class="block-card">
-                        <h2 class="title title-style">Repair Cost:</h2>
-                        <p class="common">Upon request</p>
-                    </div>
-                </div>
-                <div class="slider">
-                    <img src="img/strelka.svg">
-                    <img src="img/Vector (Stroke).svg" class="svg">
-                    <img src="img/strelka2.svg" class="rect">
-                    <img src="img/Rectangle 7.4.svg" class=rect>
-                    <img src="img/Rectangle 7.4.svg" class="rect">
-                    <img src="img/Vector (Stroke).svg">
-                    <img src="img/line.svg">
                 </div>
             </div>
         </div>
@@ -104,14 +113,15 @@
                     <img src="img/oran.svg" class="dash">
                 </div>
                 <div class="control-photo">
-                    <img src="img/image 6.jpg">
-                    <img src="img/Ellipse.png" class="circle">
-                    <img src="img/Polygon.png" class="strelka">
+                    <img src="img/image 6.jpg" class="control-img">
+                    <span class="circle"></span>
+                  
                 </div>
                 <hr class="center-dash">
 
             </div>
             <div class="wrapper">
+                
                 <p class="common control-subtitle">
                     At each facility, a camera is installed that broadcasts the progress of work on the clock. At any
                     time, you can go to our website and monitor the progress of work in your apartment. You can watch
@@ -119,8 +129,9 @@
                     to
                     the broadcast.
                 </p>
-
-                <form class="control-form">
+            
+                <form class="control-form ">
+                    
                     <div class="control-form-container">
                         <label class=" common label control-label ">Name</label>
                         <input type="text" class="input control-input" placeholder="What is your name:"></div>
@@ -128,11 +139,13 @@
                         <label class="common label control-label">Phone</label>
                         <input type="text" class="input control-input" placeholder="Your phone number is"></div>
                     <button class="button control-btn">Submit</button>
+                    <label class="input-label">
+                        <input type="checkbox" class="checkbox">
+                        <span class="fake"></span>
+                        <span class="input-text common">I agree to the processing of personal data</span></label>
+                    
                 </form>
-                <label class="input-label">
-                    <input type="checkbox" class="checkbox">
-                    <span class="fake"></span>
-                    <span class="input-text common">I agree to the processing of personal data</span></label>
+                
             </div>
         </div>
 
@@ -289,7 +302,7 @@
                 </div>
                 <div class="image-container">
                     <div class="img-container1">
-                        <img src="img/clock.jpg">
+                        <img src="img/clock.jpg" class="clock">
                         <img src="img/guest.jpg" class="guest">
                     </div>
                     <div class="img-container2">
@@ -297,6 +310,13 @@
                         <img src="img/flower.jpg" class="flower">
                     </div>
                 </div>
+                <div class="img-hidden">
+                    <img src="img/Group 8.8.svg" class="slider-icon">
+                    <img src="img/fantasy-hidden.jpg" class="hidden-project">
+                    <img src="img/Group 8.9.svg" class="slider-icon2">
+                </div>
+
+
 
             </div>
         </div>
@@ -392,7 +412,7 @@
                         </div>
                     </div>
                 </div>
-            
+
             </div>
         </div>
         <div class="question-section background-container">
