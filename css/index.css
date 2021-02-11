@@ -200,7 +200,7 @@ body {
     max-width: 253px;
 
 }
-.img-hidden{
+.img-hidden,.hidden-title{
     display: none;
 }
 .second-subtitle {
@@ -368,10 +368,13 @@ input.control-input[type="text"]::-moz-placeholder {
 
 .control-form {
     margin-top: 91px;
-    display: flex;
     margin-bottom: 39px;
+   
 }
-
+.form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .control-form-container {
     position: relative;
@@ -381,11 +384,13 @@ input.control-input[type="text"]::-moz-placeholder {
 
 .control-btn {
     margin-left: 49px;
-
     padding: 20px 75px;
 }
 
-
+.input-label{
+    margin-top: 20px;
+    margin-left: 20%;
+}
 
 .input-text {
     color: black;
@@ -816,6 +821,7 @@ input.request-input[type="search"]::-moz-placeholder {
     padding-left: 5px;
 }
 
+
 .question-section {
     margin-top: 300px;
     background-image: url(../img/question.jpg);
@@ -836,14 +842,30 @@ input.request-input[type="search"]::-moz-placeholder {
     background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
 }
 
-.form-question {
-    max-width: 883px;
+.form-question-container{
     background-color: #131313;
-
     padding: 34px 181px;
-
     margin-top: -222px;
+    max-width: 883px;
+   
+}
+.form-question{
+    max-width: 520px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.flex-question{
+    display: flex;
+    margin-top:46px;
+    flex-direction: row;
 
+}
+.form-group2{
+    display: flex;
+    flex-direction: column;
+  
+    
 }
 
 .question-title {
@@ -852,31 +874,17 @@ input.request-input[type="search"]::-moz-placeholder {
     font-size: 20px;
 }
 
-.flex-question {
-    display: flex;
-    margin-top: 45px;
-    margin-left: 8px;
-}
-
 .question-input {
     width: 230px;
 }
-
-.question-form-group {
-    margin-left: 58px;
+.phone-form-group{
+    margin-left: 28%;
 }
-
-.question-checkbox {
-    margin-left: 100px;
-}
-
-.question-input2 {
-    width: 516px;
-}
-
 .question-btn {
-    margin-left: 200px;
-    margin-top: -20px;
+    font-size: 13px;
+    line-height: 27px;
+    height: 51px;
+    align-self: center;
     padding: 20px 54px;
 }
 
@@ -897,11 +905,9 @@ input.request-input[type="search"]::-moz-placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 5;
 
 }
 .footer {
     padding: 20px 20px;
 }
-
-
-  

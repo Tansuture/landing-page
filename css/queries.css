@@ -5,7 +5,12 @@
 
     .header-title {
         font-size: calc(20px + 17 * (100vw / 1300));
-        line-height: calc(31px + 22 * (100vw / 1300))
+        line-height: calc(31px + 22 * (100vw / 1300));
+        padding-left: 25px;
+    }
+
+    .logo {
+        font-size: 15px;
     }
 
     .header-nav,
@@ -20,9 +25,10 @@
     .tel {
         color: white;
         margin-right: 100px;
+
     }
 
-    
+
     .project-section {
         display: flex;
         flex-direction: column;
@@ -34,12 +40,15 @@
     .img-hidden {
         display: block;
         position: relative;
+        width: 100%;
     }
 
     .hidden-project {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+    }
+    .hidden-title {
+        display: inline;
+       
     }
 
     .slider-icon {
@@ -58,7 +67,7 @@
     .slider {
         display: none;
     }
-   
+
 
     .points {
         display: none;
@@ -74,125 +83,32 @@
 
     }
 
-
-}
-   
-    @media screen and (max-width : 768px) {
-        .get-ready{
-    font-size: 14px;
-    line-height: 135.84%;
-    padding-left: 18px;
-    text-align: left;
-        }
-        .calculate-btn,.submit-btn{
-            height: 51px;
-            width: auto;
-            margin-left: 18px;
-            margin-right: 18px;
-            margin-top: 32px;
-        }
-        
-        .control-section {
-            background-color: #131313;
-            display: flex;
-            flex: column;
-            align-items: center;
-        }
-    
-        .control-subtitle {
-            color: #FFFFFF;
-            font-size: 11px;
-            line-height: 1.7;
-            color: #fff;
-            margin-bottom: 61px;
-        }
-    
-        .control-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    
-        .block {
-            padding-left: 40px;
-        }
-    
-        .control-title,
-        .images {
-            padding-left: 100px;
-        }
-        .control-form{
-            flex-direction: column;
-            align-items: center;
-            margin-top: 0;
-            padding-bottom: 30px;
-            
-        }
-        .control-form-container{
-            width: 100%;
-            margin-bottom: 26px;
-            
-        }
-        .control-label {
-            color: white;
-           
-        }
-        .control-btn {
-           
-        }
-        .control-input {
-            width: 100%;
-        }
-        
-    
-        input.control-input::-webkit-input-placeholder {
-            color: #FFFFFF;
-        }
-    
-        input.control-input[type="text"]::-moz-placeholder {
-            color: #FFFFFF;
-        }
-        
-        .input-text{
-            color:white;
-        }
-        .gallery{
-            display: grid;
-            justify-content: center;
-            align-content: center;
-            gap: 4px;
-            grid-auto-flow: row;
-            margin-top: 20px;
-        }
-        .repair-title{
-            padding-left: 20px;
-            text-align: center;
-        }
-        .repair-images{
-            padding-left: 35%;
-        }
-        
-    .request-container,.pig-logo-container,.clients-section{
-        display:none;
-    }
-    .question-section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    .request-container,
+    .pig-logo-container,
+    .clients-section,
+    .fantasies-list,
+    .image-container,
     .fantasies-section {
-         background-image: none;
-        background-color:white;
+        display: none;
+    }
+
+
+    .fantasies-section {
+        background-image: none;
+        background-color: white;
         margin-top: -180px;
-       
+
     }
-    .fantasies-section::before{
-        background:none;
+
+    .fantasies-section::before {
+        background: none;
     }
+
     .fantasies-style {
-        margin:0;
-         padding:0;
+        margin: 0;
+        padding: 0;
     }
+
     .fantasies-title {
         font-size: 20px;
         line-height: 28px;
@@ -200,11 +116,176 @@
         margin-bottom: 24px;
         text-align: center;
     }
-    
-    .fantasies-list,.image-container {
-        display:none;
+
+    .question-section {
+
+        background: #181818;
+        width: 100%;
+        margin-top: -180px;
+        display: flex;
+        flex-direction: column;
     }
+
+    .question-section::before {
+        background: none;
+    }
+
+    .form-question-container {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .flex-question {
+        flex-direction: column;
+    }
+
+    .question-input {
+        width: 100%;
+    }
+
+    .phone-form-group {
+        margin-left: 0;
+    }
+
+    .location-center {
+        flex-direction: column-reverse;
+
+    }
+
+    .location-title {
+        font-size: 18px;
+        line-height: 25px;
+        width: 100%;
+    }
+
+    .footer {
+        display: none;
+    }
+
+
 }
 
+@media screen and (max-width : 768px) {
 
 
+    .get-ready {
+        font-size: 14px;
+        line-height: 135.84%;
+        padding-left: 18px;
+        text-align: left;
+    }
+
+    .calculate-btn,
+    .submit-btn {
+        height: 51px;
+        width: auto;
+        margin-left: 18px;
+        margin-right: 18px;
+        margin-top: 32px;
+    }
+
+    .control-section {
+        background-color: #131313;
+        display: flex;
+        flex: column;
+        align-items: center;
+    }
+
+    .control-subtitle {
+        color: #FFFFFF;
+        font-size: 11px;
+        line-height: 1.7;
+        color: #fff;
+        margin-bottom: 61px;
+    }
+
+    .control-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .block {
+        padding-left: 40px;
+    }
+
+    .control-title,
+    .images {
+        padding-left: 100px;
+        font-size: calc(20px + 17 * (100vw / 768));
+    }
+
+    .control-form {
+        margin-top: 0;
+        margin-right: 49px;
+
+    }
+
+    .form-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .control-form-container {
+        width: 100%;
+        margin-bottom: 26px;
+
+    }
+
+    .control-label {
+        color: #FFFFFF;
+    }
+
+    .control-btn {
+        margin-top: 30px;
+        width: 90%;
+        margin-right: 15%;
+    }
+
+    .control-input {
+        width: 100%
+    }
+
+    input.control-input::-webkit-input-placeholder {
+        color: #FFFFFF;
+    }
+
+    input.control-input[type="text"]::-moz-placeholder {
+        color: #FFFFFF;
+    }
+
+    .input-label {
+        margin-top: -90px;
+        width: 100%;
+    }
+
+    .input-text {
+        color: white;
+        font-size: 11px;
+    }
+
+    .repair-section {
+        margin-top: 15%;
+    }
+
+    .gallery {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 4px;
+        grid-auto-flow: row;
+        margin-top: 20px;
+    }
+
+    .repair-title {
+        padding-left: 20px;
+        text-align: center;
+    }
+
+    .repair-images {
+        padding-left: 35%;
+    }
+
+
+
+}

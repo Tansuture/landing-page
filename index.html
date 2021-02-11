@@ -22,12 +22,12 @@
             </div>
             <nav>
                 <ul class="header-nav">
-                    <li class="header-nav_item"><a href="#">Home</a></li>
-                    <li class="header-nav_item"><a href="#">Projects</a></li>
-                    <li class="header-nav_item"><a href="#">Measurements</a></li>
-                    <li class="header-nav_item"><a href="#">Team</a></li>
-                    <li class="header-nav_item"><a href="#">Reviews</a></li>
-                    <li class="header-nav_item"><a href="#">Contacts</a></li>
+                    <li class="header-nav_item"><a href="#home">Home</a></li>
+                    <li class="header-nav_item"><a href="#project">Projects</a></li>
+                    <li class="header-nav_item"><a href="#control">Measurements</a></li>
+                    <li class="header-nav_item"><a href="#request">Team</a></li>
+                    <li class="header-nav_item"><a href="#review">Reviews</a></li>
+                    <li class="header-nav_item"><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
             <a class="tel" href="tel:+79287683239">+7(928)7683239</a>
@@ -35,7 +35,7 @@
         </div>
     </header>
     <main>
-        <div class="img-back background-container">
+        <div class="img-back background-container" id="home">
             <div class="wrapper img-back-container">
                 <h1 class="title header-title">
                     Turnkey Repair in the <br>
@@ -50,7 +50,7 @@
                 <button class=" button submit-btn">SUBMIT YOUR APPLICATION</button>
             </div>
         </div>
-        <div class="project-section">
+        <div class="project-section" id="project">
             <div class="wrapper">
                 <div class="project-container">
                     <ul class="points">
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </div>
-        <div class="control-section">
+        <div class="control-section" id="control">
             <div class="wrapper">
                 <h3 class="title control-title">
                     online control
@@ -131,7 +131,7 @@
                 </p>
             
                 <form class="control-form ">
-                    
+                    <div class="form-wrap">
                     <div class="control-form-container">
                         <label class=" common label control-label ">Name</label>
                         <input type="text" class="input control-input" placeholder="What is your name:"></div>
@@ -143,8 +143,9 @@
                         <input type="checkbox" class="checkbox">
                         <span class="fake"></span>
                         <span class="input-text common">I agree to the processing of personal data</span></label>
-                    
+                    </div>
                 </form>
+                
                 
             </div>
         </div>
@@ -223,7 +224,7 @@
                 </div>
             </div>
         </div>
-        <div class="request-section">
+        <div class="request-section" id="request">
             <div class="wrapper">
                 <div class="request-container">
                     <div class="steps">
@@ -310,17 +311,10 @@
                         <img src="img/flower.jpg" class="flower">
                     </div>
                 </div>
-                <div class="img-hidden">
-                    <img src="img/Group 8.8.svg" class="slider-icon">
-                    <img src="img/fantasy-hidden.jpg" class="hidden-project">
-                    <img src="img/Group 8.9.svg" class="slider-icon2">
-                </div>
-
-
 
             </div>
         </div>
-        <div class="clients-section ">
+        <div class="clients-section" id="review">
 
             <div class="wrapper">
                 <h3 class="title  repair-title">
@@ -417,33 +411,42 @@
         </div>
         <div class="question-section background-container">
             <div class="wrapper img-back-container">
-                <div class="form-question">
-                    <h4 class="title question-title">have any questions?</h4>
-                    <div class="flex-question">
-                        <div class="form-group">
-                            <label class="label request-label common">Name</label>
-                            <input type="text" class="input  question-input request-input"
-                                placeholder="What is your name:">
+                <h4 class="title fantasies-title hidden-title">We realize your<br>
+                    wildest fantasies</h4>
+                <div class="img-hidden">
+                    <img src="img/Group 8.8.svg" class="slider-icon">
+                    <img src="img/fantasy-hidden.jpg" class="hidden-project">
+                    <img src="img/Group 8.9.svg" class="slider-icon2">
+                </div>
+                <div class="form-question-container">
+                    <form class="form-question">
+                        <h4 class="title question-title">have any questions?</h4>
+                        <div class="flex-question">
+                            <div class="form-group form-group2">
+                                <label class="label request-label common">Name</label>
+                                <input type="text" class="input  question-input request-input"
+                                    placeholder="What is your name:">
+                            </div>
+                            <div class="form-group form-group2 phone-form-group">
+                                <label class="label request-label common">Phone</label>
+                                <input type="text" class="input question-input request-input" placeholder="Your number is:">
+    
+                            </div>
                         </div>
-                        <div class="form-group question-form-group">
-                            <label class="label request-label common">Phone</label>
-                            <input type="text" class="input question-input request-input" placeholder="Your number is:">
-
+                        <div class="form-group form-group2 ">
+                            <label class="label  request-label common">Question</label>
+                            <input type="text" class="input  request-input " placeholder="I want to know:">
+    
                         </div>
+                        <label class="input-label2 question-checkbox">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake"></span>
+                            <span class="input-text  input-white common">I agree to the processing of personal
+                                data</span>
+                        </label>
+                        <button class="button question-btn">Submit </button>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label class="label  request-label common">Question</label>
-                        <input type="text" class="input  question-input2 request-input " placeholder="I want to know:">
-
-                    </div>
-
-                    <label class="input-label2 question-checkbox">
-                        <input type="checkbox" class="checkbox">
-                        <span class="fake"></span>
-                        <span class="input-text  input-white common">I agree to the processing of personal
-                            data</span>
-                    </label>
-                    <button class="button question-btn">Submit </button>
                 </div>
                 <div class="location-center">
                     <h4 class="title location-title">Rostov-on-Don, Nansen St., 239 Shopping Center<br>
@@ -451,9 +454,8 @@
                     <img src="img/letter.svg" class="letter-icon">
                     <img src="img/map.jpg" class="map">
                     <div>
-                    </div>
-                </div>
-
+            </div>
+        </div>
     </main>
     <footer class="footer header">
         <div class="wrapper header-content footer-content">
