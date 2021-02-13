@@ -1,21 +1,18 @@
 
-
 body {
     font-family: "Nunito Sans Arial";
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
-    
-    
+
 }
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
- 
-}
+
+ }
 
 .wrapper {
     max-width: 1259px;
@@ -334,6 +331,7 @@ body {
     text-align: center;
     margin-top: 34px;
     position: relative;
+    margin-left: 10%;
 }
 
 .input {
@@ -358,28 +356,25 @@ input.control-input[type="text"]::-moz-placeholder {
 
 .control-label {
     color: rgb(54, 54, 54, 0.5);
-    position: absolute;
-
-    top: 0;
-    left: 3px;
-    margin-left: -3px;
-    margin-top: -15px;
+    
 }
 
 .control-form {
     margin-top: 91px;
-    margin-bottom: 39px;
+    display: flex;
+    margin-left: 17%;
    
 }
 .form-wrap {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .control-form-container {
-    position: relative;
-    margin-left: 58px;
-    margin-top: 22px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .control-btn {
@@ -823,15 +818,21 @@ input.request-input[type="search"]::-moz-placeholder {
 
 
 .question-section {
-    margin-top: 300px;
+  
     background-image: url(../img/question.jpg);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 90px;
+    position: relative;
+
 
 }
-
+.question-container {
+    padding-bottom: 90px;  
+    margin-top: 300px;
+    display: flex;  
+    flex-direction: column; 
+    align-items: center;
+    position: relative;  
+}
 .question-section::before {
     content: "";
     position: absolute;
@@ -846,14 +847,12 @@ input.request-input[type="search"]::-moz-placeholder {
     background-color: #131313;
     padding: 34px 181px;
     margin-top: -222px;
-    max-width: 883px;
-   
 }
 .form-question{
-    max-width: 520px;
+  
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
 }
 .flex-question{
     display: flex;
@@ -902,12 +901,15 @@ input.request-input[type="search"]::-moz-placeholder {
 }
 
 .location-center {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 5;
+    overflow: hidden;
 
 }
+
 .footer {
     padding: 20px 20px;
 }
