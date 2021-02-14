@@ -10,13 +10,14 @@
     .header-title {
         font-size: calc(20px + 17 * (100vw / 1300));
         line-height: calc(31px + 22 * (100vw / 1300));
-        
+
     }
-   
+
 
     .logo {
         font-size: 15px;
     }
+
 
     .header-nav,
     .header-btn {
@@ -29,7 +30,7 @@
 
     .tel {
         color: white;
-        margin-right: 100px;
+        margin: 0;
 
     }
 
@@ -38,6 +39,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: -90px;
 
     }
 
@@ -56,8 +58,9 @@
     .slider-icon2 {
         position: absolute;
         top: 50%;
-        left: 90%;
+        left: 85%;
     }
+
 
     .image2-1,
     .slider {
@@ -70,13 +73,17 @@
     }
 
     .completed {
-        padding-left: 100px;
-    }
-
-    .completed,
-    .second-subtitle {
+        margin-bottom: 22px;
         text-align: center;
 
+    }
+
+    .second-subtitle {
+
+        font-size: 11px;
+        line-height: 158.48%;
+        text-align: center;
+        margin-top: 22px;
     }
 
     .img-hidden {
@@ -94,7 +101,7 @@
     .pig-logo-container,
     .clients-section,
     .fantasies-list,
-    .image-container{
+    .image-container {
         display: none;
     }
 
@@ -125,7 +132,7 @@
     }
 
     .fantasy-hidden {
-     
+
         display: block;
         width: 100%;
     }
@@ -134,16 +141,16 @@
         background: none;
         margin-top: -180px;
         background-color: #131313
-
     }
+
     .question-container {
-       margin-top: -18px;
+        margin-top: -18px;
     }
 
     .question-section::before {
         background: none;
     }
-   
+
     .form-question-container {
         margin-top: 10%;
         height: auto;
@@ -153,28 +160,24 @@
 
     .form-question {
         height: auto;
-        align-items: flex-start;
+        
     }
 
     .flex-question {
         flex-direction: column;
     }
-    
 
-    .question-input {
-        width: 100%;
-    
-    }
+
 
     .form-group {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
+
 
     }
-    
+
     .phone-form-group {
         margin-left: 0;
     }
@@ -185,12 +188,12 @@
 
     .location-center {
         flex-direction: column-reverse;
-  
+
         margin-top: 10%;
         width: 100%;
-        
+
     }
-    
+
     .location-title {
         font-size: 18px;
         line-height: 25px;
@@ -207,11 +210,10 @@
 
 @media screen and (max-width : 768px) {
 
-
     .get-ready {
         font-size: 14px;
         line-height: 135.84%;
-        width: 300px;
+        width: 100%;
     }
 
     .calculate-btn,
@@ -231,11 +233,13 @@
     }
 
     .control-subtitle {
-        color: #FFFFFF;
+        margin-top: 5%;
         font-size: 11px;
-        line-height: 1.7;
+        line-height: 19px;
         color: #fff;
-        margin-bottom: 61px;
+        width: auto;
+        margin-left: 0;
+
     }
 
     .control-img {
@@ -250,40 +254,43 @@
 
     .control-title,
     .images {
-        padding-left: 100px;
-        font-size: calc(20px + 17 * (100vw / 768));
+        padding-left: 19%;
+        font-size: 22px;
     }
 
     .control-form {
-        margin-top: 0;
         width: 100%;
-
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
     }
 
     .form-wrap {
         flex-direction: column;
         align-items: center;
+        margin-right: 0;
+        margin-bottom: 55px;
+        width: 100%;
     }
 
     .control-form-container {
-        width:100%;
+        width: 100%;
         margin-bottom: 26px;
 
     }
 
     .control-label {
-        color: #FFFFFF;
+        color: rgba(255, 255, 255, 0.5);
     }
 
     .control-btn {
-        margin-top: 30px;
-        width: 90%;
-        margin-left: 0;
+        position: relative;
+        bottom: -80px;
+        width: 80%;
+        height: 51px;
     }
 
-    .control-input {
-        width: 100%
-    }
+   
 
     input.control-input::-webkit-input-placeholder {
         color: #FFFFFF;
@@ -295,6 +302,9 @@
 
     .input-label {
         width: 100%;
+        margin-top: -30px;
+        margin-left: 0;
+
     }
 
     .input-text {
@@ -323,6 +333,14 @@
     .repair-images {
         padding-left: 35%;
     }
+}
+@media (max-width: 343px){
+.header-title {
+    font-size: 20px;
+}
+.get-ready {
+    font-size:12px;
 
 
+}
 }

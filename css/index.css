@@ -27,6 +27,9 @@ body {
     top: 0;
 
 }
+.header-nav a:hover {
+    color: #E3B873;
+}
 
 .header-content {
     display: flex;
@@ -339,10 +342,11 @@ body {
     border-bottom: 1px solid #ccc;
     background-color: transparent;
     outline: none;
+ 
 }
 
 .control-input {
-    max-width: 231px;
+   
     margin-top: 15px;
 }
 
@@ -368,6 +372,8 @@ input.control-input[type="text"]::-moz-placeholder {
 .form-wrap {
     display: flex;
     flex-wrap: wrap;
+
+    justify-content: space-between;
     
 }
 
@@ -378,7 +384,7 @@ input.control-input[type="text"]::-moz-placeholder {
 }
 
 .control-btn {
-    margin-left: 49px;
+
     padding: 20px 75px;
 }
 
@@ -607,7 +613,7 @@ input.control-input[type="text"]::-moz-placeholder {
 }
 
 .request-input {
-    width: 408px;
+    width: 100%;
     padding: 0 0 10px 0;
     border-bottom: 1px solid rgb(255, 255, 255, 0.15);
 
@@ -871,13 +877,14 @@ input.request-input[type="search"]::-moz-placeholder {
     color: white;
     text-align: center;
     font-size: 20px;
+    padding-top: 2%;
+
 }
 
-.question-input {
-    width: 230px;
-}
+
 .phone-form-group{
     margin-left: 28%;
+   
 }
 .question-btn {
     font-size: 13px;
