@@ -160,7 +160,7 @@
 
     .form-question {
         height: auto;
-        
+
     }
 
     .flex-question {
@@ -290,7 +290,7 @@
         height: 51px;
     }
 
-   
+
 
     input.control-input::-webkit-input-placeholder {
         color: #FFFFFF;
@@ -334,13 +334,15 @@
         padding-left: 35%;
     }
 }
-@media (max-width: 343px){
-.header-title {
-    font-size: 20px;
-}
-.get-ready {
-    font-size:12px;
+
+@media (max-width: 343px) {
+    .header-title {
+        font-size: 20px;
+    }
+
+    .get-ready {
+        font-size: 12px;
 
 
-}
+    }
 }
