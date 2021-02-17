@@ -529,7 +529,7 @@ input.control-input[type="text"]::-moz-placeholder {
     font-size: 18px;
     line-height: 25px;
     text-transform: uppercase;
-  
+
 }
 
 .request-section {
@@ -692,7 +692,7 @@ input.request-input[type="search"]::-moz-placeholder {
 
 
 .fantasies-style {
-   
+
     padding-top: 137px;
 
 }
@@ -700,7 +700,7 @@ input.request-input[type="search"]::-moz-placeholder {
 .fantasies-title {
     font-size: 27px;
     margin-left: 40px;
-    
+
 }
 
 .fantasies-list {

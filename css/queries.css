@@ -91,6 +91,7 @@
         height: 100%;
         object-fit: cover;
     }
+
     .img-hidden {
         display: block;
         position: relative;
@@ -213,7 +214,7 @@
 
 }
 
-@media screen and (max-width : 1024px){
+@media screen and (max-width : 1024px) {
     .block {
         padding-left: 10%;
         max-width: none;
@@ -254,7 +255,7 @@
 
     }
 
-    
+
 
     .block {
         padding-left: 40px;
@@ -262,14 +263,14 @@
 
     .control-title,
     .images {
-        padding-left: 19%;
+        padding-left: 28%;
         font-size: 22px;
     }
 
     .control-form {
         width: 100%;
         margin: 15% auto 0 auto;
-    
+
     }
 
     .form-wrap {
@@ -352,6 +353,6 @@
 
 
     }
-   
-    
+
+
 }
